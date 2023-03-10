@@ -47,7 +47,7 @@ with open('text.txt') as f:
                         if int(work_buffer) % i == 0:
                             return False
                     return True
-                if work_buffer[0] != '0' and work_buffer[-2] == '4' and int(work_buffer) < int(1000) and is_prime(int(work_buffer)):
+                if  work_buffer[-2] == '4' and int(work_buffer) < int(1000) and is_prime(int(work_buffer)):
                   m += [int(work_buffer)]
         work_buffer = ''
         buffer = f.read(buffer_len)
